@@ -1,3 +1,4 @@
+fish_add_path /usr/local/py-utils/bin
 fish_add_path ~/bin
 
 # Commands to run in interactive sessions can go here
