@@ -10,7 +10,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y git curl stow vim fish neovim
 
 # Install starship
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- --yes
 
 # Enable dotfiles
 stow fish starship
