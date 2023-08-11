@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 # Ensure all requirements are installed
-sudo apt-get install -y git curl stow vim fish nvim
+sudo apt-get install -y git curl stow vim fish neovim
 
 # Install starship
 curl -sS https://starship.rs/install.sh | sh
