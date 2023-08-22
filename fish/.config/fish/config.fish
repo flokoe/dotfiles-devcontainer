@@ -1,5 +1,12 @@
-fish_add_path /usr/local/py-utils/bin
-fish_add_path ~/bin
+set CUSTOM_PATHS ~/bin /usr/local/py-utils/bin
+
+# Customize $PATH but allow backwards compatibility
+# for fish in older Debian versions.
+if type -q fish_add_path
+   fish_add_path $CUSTOM_PATHS
+else
+   set -Up fish_user_paths $CUSTOM_PATHS
+end
 
 # Commands to run in interactive sessions can go here
 if status is-interactive
