@@ -1,23 +1,27 @@
 #!/usr/bin/env bash
 
-echo "#####################"
-echo "# DEBUG OUTPUT START"
-echo "#####################"
-echo ""
-echo "Print all current environment variables:"
-echo ""
+main() {
+    echo ""
+    echo "#####################"
+    echo "# DEBUG OUTPUT START"
+    echo "#####################"
+    echo ""
+    echo "Print all current environment variables:"
+    echo ""
 
-env
+    env
 
-echo ""
-echo "---"
-echo ""
+    echo ""
+    echo "---"
+    echo ""
 
-CURRENT_USER="$(whoami)"
-echo "Current user: ${CURRENT_USER}"
+    CURRENT_USER="$(whoami)"
+    echo "Current user: ${CURRENT_USER}"
 
-echo ""
-echo "###################"
-echo "# DEBUG OUTPUT END"
-echo "###################"
-echo -e "\n\n"
+    echo ""
+    echo "###################"
+    echo "# DEBUG OUTPUT END"
+    echo "###################"
+}
+
+main
