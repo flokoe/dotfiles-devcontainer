@@ -24,4 +24,8 @@ fish -c "curl -sL https://git.io/fisher | source && fisher update"
 
 # Set fish as default shell
 FISH="$(which fish)"
-sudo chsh --shell "$FISH" "$USER"
+CURRENT_USER="$(whoami)"
+
+sudo chsh --shell "$FISH" "$CURRENT_USER"
+
+exit 0
